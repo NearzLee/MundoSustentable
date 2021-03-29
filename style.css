@@ -1,0 +1,20 @@
+
+body {
+  margin: 0em;
+}
+
+.cover {
+  height: 200px;
+  background-image: url(https://cdn.glitch.com/34e8896e-d736-405d-9af5-0db779b5097d%2Frsz_shakti-rajpurohit-p4c0kte-bju-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+}
+
+.logo{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  width: 525px;
+  margin: 0;
+}
