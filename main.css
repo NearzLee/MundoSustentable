@@ -1,3 +1,5 @@
+/* CSS files add styling rules to your content */
+
 body {
   margin: 0;
   width: 100%;
@@ -12,20 +14,19 @@ body {
   background-position: center;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
   font-family: "Oswald", sans-serif;
   color: white;
   width: 525px;
-  top:50px;
 }
 
-.logo p{
-  margin:0;
+.logo p {
+  margin: 0;
 }
 
 .nav-link {
@@ -43,19 +44,102 @@ body {
   padding: 5px;
 }
 
-.barra{
-  display:flex;
+.barra {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width:81.4%;
-  margin:auto;
+  width: 81.4%;
+  margin: auto;
 }
 
-.general{
-  width:80%;
-  border: 500px;
-  margin:auto;
-  background-color:green;
+.interesante {
+  width: 81.4%;
+  height: 400px;
+  margin: auto;
+  margin-top: 10px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 50% 25%;
+  grid-template-rows: 50%;
+}
+
+.int1,
+.int2,
+.int3,
+.int4 {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.textoInt12,
+.textoInt34 {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  margin-left: 10px;
+  margin-right: 20%;
+  line-height: 1;
+}
+
+.textoInt12 h1 {
+  font-size: 25px;
+}
+
+.textoInt34 h1 {
+  font-size: 17px;
+}
+
+.badge{
+  font-size:12px;
+  font-weight: normal;
+  data-color:red;
+}
+
+.bg-dark{
+  data-color:red;
+  
+}
+
+.int1{
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background: url(https://www.ambientum.com/wp-content/uploads/2021/03/energia-eolica-rojiblanca-paisaje-PIXABAY-1.jpg);
+}
+
+.int2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url(https://www.ambientum.com/wp-content/uploads/2021/03/energia-eolica-turbinas-renovables-PIXABAY-1.jpg);
+  grid-column: 2/4;
+}
+
+.int3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url(https://www.ambientum.com/wp-content/uploads/2021/03/gruas-construccion-PIXABAY.jpg);
+  background-color: grey;
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+
+.int4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url(https://www.ambientum.com/wp-content/uploads/2021/03/madera-biomasa-PIXABAY-1.jpg);
+  background-color: yellow;
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+
+.int2:hover{
+  transform:scale(1);
+}
+
+.general {
+  width: 81.4%;
+  height: 100%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: green;
 }
 
 @media screen and (max-width: 500px) {
@@ -77,9 +161,9 @@ body {
   }
   .barra {
     justify-content: center;
-    width:100%;
+    width: 100%;
   }
-  .general{
-    width:100%;
+  .general {
+    width: 100%;
   }
 }
