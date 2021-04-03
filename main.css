@@ -176,23 +176,14 @@ body {
   color: white;
 }
 
-.general {
-  width: 81.4%;
-  margin:auto;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 7% 93%;
-  column-grap:10px;
-}
 
 .bannerUltimos{
-  grid-column:1/2;
+  grid-column:1/-1;
   grid-row:1/2;
 }
 
 .bannerUltimos h1{
-  font-size:17px;
+  font-size:15px;
 }
 
 .linea{
@@ -201,15 +192,15 @@ body {
   height:2px;
 }
 
-.contenido {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 40%;
-  grid-template-rows: repeat(5, 1fr);
-  margin: auto;
-  gap: 30px;
-  grid-row-start:2;
-  grid-row-end:-1;
+.general {
+  width: 81.4%;
+  height:100%;
+  margin:auto;
+  display:grid;
+  gap:30px;
+  grid-template-columns: 28% 42% 30%;
+  grid-template-rows: 23px repeat(5, 149.33px);
+  margin-top:20px;
 }
 
 .tituloNoticia{
@@ -220,34 +211,34 @@ body {
 
 .noticia1 {
   grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.noticia2 {
-  grid-column: 2/-1;
   grid-row: 2/3;
 }
 
-.noticia3 {
-  grid-column: 2/-1;
+.noticia2 {
+  grid-column: 2/3;
   grid-row: 3/4;
 }
 
-.noticia4 {
-  grid-column: 2/-1;
+.noticia3 {
+  grid-column: 2/3;
   grid-row: 4/5;
 }
 
-.noticia5 {
-  grid-column: 2/-1;
+.noticia4 {
+  grid-column: 2/3;
   grid-row: 5/6;
+}
+
+.noticia5 {
+  grid-column: 2/3;
+  grid-row: 6/7;
 }
 
 .noticiaimg1 {
   width:100%;
   height:100%;
   grid-column: 1/2;
-  grid-row: 1/2;
+  grid-row: 2/3;
   background-image: url(https://www.ambientum.com/wp-content/uploads/2021/03/encelado-saturno-PIXABAY.jpg);
   background-position: center;
   background-size: cover;
@@ -256,7 +247,7 @@ body {
 
 .noticiaimg2 {
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 3/4;
   background-image: url(https://www.ambientum.com/wp-content/uploads/2021/03/aceite-PIXABAY.jpg);
   background-position: center;
   background-size: cover;
@@ -264,7 +255,7 @@ body {
 
 .noticiaimg3 {
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 4/5;
   background-image:url(https://www.ambientum.com/wp-content/uploads/2021/03/litoral-mediterraneo-PIXABAY.jpg);
   background-position: center;
   background-size: cover;
@@ -272,7 +263,7 @@ body {
 
 .noticiaimg4 {
   grid-column: 1/2;
-  grid-row: 4/5;
+  grid-row: 5/6;
   background-image:url(https://www.ambientum.com/wp-content/uploads/2021/03/Zealandia-PIXABAY.jpg);
   background-position: center;
   background-size: cover;
@@ -280,7 +271,7 @@ body {
 
 .noticiaimg5 {
   grid-column: 1/2;
-  grid-row: 5/6;
+  grid-row: 6/7;
   background-image:url(https://www.ambientum.com/wp-content/uploads/2021/03/tren-estacion-PIXABAY.jpg);
   background-position: center;
   background-size: cover;
@@ -299,13 +290,10 @@ body {
   color:red;
 }
 
-.noticiaimg1.noticia1:hover{
-  background:red;
-}
 
 .publicidad {
   width: 100%;
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 1/-1;
   display: flex;
   align-items: center;
