@@ -47,7 +47,7 @@
           <a class="link">Categorías</a>
           <ul class="nav">
             <li><a class="link" href="luz.html">Luz</a></li>
-            <li><a class="link" href="agua.html">Agua</a></li>
+            <li><a class="link" href="agua.php">Agua</a></li>
             <li><a class="link" href="#">Plantas/Árboles(pendiente)</a></li>
             <li><a class="link" href="#">Manejo de la basura(pendiente)</a></li>
           </ul>
