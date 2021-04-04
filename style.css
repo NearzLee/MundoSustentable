@@ -3,6 +3,7 @@
 body {
   margin: 0;
   width: 100%;
+  height:100%;
 }
 
 .imagen {
@@ -28,27 +29,62 @@ body {
   margin: 0;
 }
 
-.nav-link {
-  color: white;
-}
-.nav li a:hover {
-  color: grey;
-}
-.open {
-  color: grey;
+header{
+  background:#212529;
 }
 
-.nav {
-  background-color: #212529;
-  padding: 5px;
+.navegacion{
+  margin:auto;
+  width:81.4%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:right;
 }
 
-.barra {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 81.4%;
-  margin: auto;
+
+.nav li a{
+  background-color:#212529;
+  text-decoration:none;
+  padding:10px 30px;
+  display:block;
+}
+
+.link{
+  color:white;
+}
+
+.nav > li{
+  float:left;
+}
+
+.nav li a:hover{
+  color:grey;
+}
+
+.nav li{
+  position:relative;
+}
+
+.nav li ul{
+  display:flex;
+  display: none;
+  flex-direction:column;
+  position:absolute;
+  z-index: 100;
+}
+
+.nav li ul a{
+  width:150%;
+}
+
+.nav li:hover > ul{
+  display:block;
+  display:flex;
+}
+
+
+.link-abierto{
+  color:grey;
 }
 
 .interesante {
@@ -67,7 +103,6 @@ body {
 .int3,
 .int4 {
   position: relative;
-  display: inline-block;
   overflow: hidden;
 }
 
@@ -86,10 +121,17 @@ body {
 .badge {
   font-size: 10px;
   font-weight: normal;
-  data-color: red;
   background-color: black;
   text-decoration: none;
   margin-bottom: 1%;
+}
+
+.badge.badgeUltimos:hover{
+  background-color:black;
+}
+
+.badge:hover{
+  background-color:red;
 }
 
 .int1 {
@@ -133,13 +175,13 @@ body {
 }
 
 .int1Image {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
     url(https://www.ambientum.com/wp-content/uploads/2021/03/energia-eolica-rojiblanca-paisaje-PIXABAY-1.jpg);
 }
 
 .int2Image {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
-    url(https://www.ambientum.com/wp-content/uploads/2021/03/energia-eolica-turbinas-renovables-PIXABAY-1.jpg);
+    url(https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
 }
 
 .int3Image {
@@ -152,21 +194,11 @@ body {
     url(https://www.ambientum.com/wp-content/uploads/2021/03/madera-biomasa-PIXABAY-1.jpg);
 }
 
-.int1Image:hover {
+.int1Image:hover, .int2Image:hover , .int3Image:hover , .int4Image:hover  {
   transform: scale(1.2);
 }
 
-.int2Image:hover {
-  transform: scale(1.2);
-}
 
-.int3Image:hover {
-  transform: scale(1.2);
-}
-
-.int4Image:hover {
-  transform: scale(1.2);
-}
 
 .textoInt12:hover {
   color: white;
@@ -192,9 +224,8 @@ body {
   height:2px;
 }
 
-.general {
+.generalInicio {
   width: 81.4%;
-  height:100%;
   margin:auto;
   display:grid;
   gap:30px;
@@ -235,46 +266,28 @@ body {
 }
 
 .noticiaimg1 {
-  width:100%;
-  height:100%;
   grid-column: 1/2;
   grid-row: 2/3;
-  background-image: url(https://www.ambientum.com/wp-content/uploads/2021/03/encelado-saturno-PIXABAY.jpg);
-  background-position: center;
-  background-size: cover;
-  position:relative;
 }
 
 .noticiaimg2 {
   grid-column: 1/2;
   grid-row: 3/4;
-  background-image: url(https://www.ambientum.com/wp-content/uploads/2021/03/aceite-PIXABAY.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .noticiaimg3 {
   grid-column: 1/2;
   grid-row: 4/5;
-  background-image:url(https://www.ambientum.com/wp-content/uploads/2021/03/litoral-mediterraneo-PIXABAY.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .noticiaimg4 {
   grid-column: 1/2;
   grid-row: 5/6;
-  background-image:url(https://www.ambientum.com/wp-content/uploads/2021/03/Zealandia-PIXABAY.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .noticiaimg5 {
   grid-column: 1/2;
   grid-row: 6/7;
-  background-image:url(https://www.ambientum.com/wp-content/uploads/2021/03/tren-estacion-PIXABAY.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .noticia1,
