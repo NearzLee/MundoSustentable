@@ -321,6 +321,108 @@ header{
   background-color:#212529;
 }
 
+.generalNoticia{
+  display:grid;
+  width:81.4%;
+  margin:auto;
+  grid-template-columns: 0em 70%;
+  grid-template-rows:auto 25em;
+  gap:1em;
+  margin-top:1.25em;
+}
+
+.encabezadoNoticia{
+  grid-column:2/4;
+  grid-row:1/2;
+}
+
+.encabezadoNoticia h1{
+  font-family: "Oswald", sans-serif;
+}
+
+.imagenNoticia{
+  grid-column:2/3;
+  grid-row:2/3;
+  border:0.625em;
+}
+
+.noticia{
+  grid-column:2/3;
+  grid-row:3/-1;;
+}
+
+.publicidadNoticia{
+  grid-column:3/4;
+  grid-row:2/4;
+  background-color:orange;
+}
+
+.noticia p{
+  font-size:17px;
+  text-align:justify;
+}
+
+.badgeTipo{
+}
+
+.encabezadoNoticia h2{
+  font-size:12px;
+}
+
+
+.imgNoticia{
+  justify-content:center;
+  align-items:center;
+}
+
+.imgNoticia img{
+  width:100%;
+}
+
+.imgNoticia p{
+  font-size:15px;
+  text-align:center;
+}
+
+.tituloTema{
+  width:81.4%;
+  margin:auto;
+  margin-top:20px;
+  
+}
+
+.generalTemas{
+  width:81.4%;
+  display:grid;
+  grid-template-columns:70%;
+  margin:auto;
+  margin-top:20px;
+}
+
+.spamTemas{
+  grid-column:2/3;
+  grid-row:1/3;
+  background-color:orange;
+}
+
+.contenidoNoticia{
+  grid-column:1/2;
+}
+
+.publiNoticia{
+  display:flex;
+  margin-bottom:30px;
+}
+
+.textoNoticia{
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.textoNoticia p{
+  font-size:13px;
+}
+
 @media screen and (max-width: 500px) {
   .imagen {
     width: 100%;
